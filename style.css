@@ -187,6 +187,7 @@ input[type="submit"] {
 
 .contenedorForm {
   display: flex;
+  
 }
 
 #mapa {
@@ -197,6 +198,7 @@ input[type="submit"] {
 
 #mainContacto {
   padding-left: 70px;
+  
 }
 
 
@@ -353,9 +355,9 @@ input[type="submit"] {
     border-radius: 10px;
   }
   
-  #mainContacto {
+  /*#mainContacto {
     padding-left: 70px;
-  }
+  }*/
   
   /*********************
       GRIDS por AREAS
@@ -365,7 +367,7 @@ input[type="submit"] {
     grid-template-areas: "menu" "principal" "pie";
     grid-template-columns: 100%;
     grid-template-rows: 1fr 6fr 1fr;
-    grid-row-gap: 5px;
+    grid-row-gap: 0;
   }
   
   nav {
