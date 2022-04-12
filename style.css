@@ -8,6 +8,47 @@
   box-sizing: border-box;
 }
 
+/*ANIMACIONES*/
+
+h1, p {
+  animation-name: texto;
+  animation-duration: 2s;
+}
+
+/* Linea de tiempo = KEYFRAME */
+@keyframes texto {
+  from/* inicio */{
+  transform: translateX(1000px);
+  opacity: 0;
+  }
+
+  to/* final */{
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+
+
+h2, h3 {
+  animation-name: texto2;
+  animation-duration: 2s;
+}
+
+/* Linea de tiempo = KEYFRAME */
+@keyframes texto2 {
+  from/* inicio */{
+  transform: translateX(-1000px);
+  opacity: 0;
+  }
+
+  to/* final */{
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+
+
+
 /* DESKTOP */
 @media (min-width: 1024px){
 
