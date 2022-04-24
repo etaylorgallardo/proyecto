@@ -1,0 +1,50 @@
+
+/* ANIMACIONES */
+
+h1, p {
+    animation-name: texto;
+    animation-duration: 2s;
+  }
+  
+  /* Linea de tiempo = KEYFRAME */
+  @keyframes texto {
+    from/* inicio */ {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+  
+    to/* final */ {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  h2, h3 {
+    animation-name: texto2;
+    animation-duration: 2s;
+  }
+  
+  /* Linea de tiempo = KEYFRAME */
+  @keyframes texto2 {
+    from/* inicio */ {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+  
+    to/* final */ {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .card-border {
+    border: solid 10px white;
+    border-radius: 20px;
+    transition: all ease-out 0.2s;
+  }
+  
+  .card-border:hover {
+    transform: scale(1.05);
+  }
+  
+  /* FIN ANIMACIONES */
