@@ -66,14 +66,9 @@ h2 {
   text-align: center;
 }
 
-iframe {
-  width: 700px;
-  height: 400px;
-}
-
 .parrafo {
-  width: auto; /* ancho */
-  height: auto; /* alto */
+  width: auto;
+  height: auto;
   background-color: #affaab;
   color: black;
   font-weight: bold;
@@ -92,7 +87,7 @@ iframe {
   align-items: center;
 }
 
-.imagendoc {
+.imagen-blog {
   border-radius: 100%;
 }
 
@@ -114,6 +109,7 @@ input[type="submit"] {
 
 .contenedorForm {
   display: flex;
+  flex-direction: row;
 }
 
 #mapa {
@@ -143,7 +139,8 @@ footer {
 
 /* ANIMACIONES */
 
-h1, p {
+h1,
+p {
   animation-name: texto;
   animation-duration: 2s;
 }
@@ -167,7 +164,8 @@ h1, p {
   }
 }
 
-h2,h3 {
+h2,
+h3 {
   animation-name: texto2;
   animation-duration: 2s;
 }
@@ -221,7 +219,22 @@ h2,h3 {
     margin: 20px;
     padding: 10px;
   }
+
+  #comentarios {
+    width: 200px;
+  }
+
+  .contenedorForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    text-align: center;
+  }
 }
+
+  
 
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -233,8 +246,6 @@ h2,h3 {
     padding-right: 30px;
     padding-top: 0px;
   }
-
-  
 }
 
 /* DESKTOP */
@@ -247,5 +258,10 @@ h2,h3 {
     padding-right: 100px;
     padding-top: 0px;
 
+  }
+
+  iframe {
+    width: 700px;
+    height: 400px;
   }
 }

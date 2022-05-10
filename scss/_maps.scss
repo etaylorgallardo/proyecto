@@ -1,0 +1,23 @@
+/* MAPS */
+
+$contenedor: ( /*Declaramos nuestro mapa*/
+
+    mostrar: flex,
+    direccion: column,
+    centro: center,
+    justificar_centro: center,
+    alinear_centro: center
+  
+); 
+
+/*MAP-GET() */
+
+.contenedor1 {
+    display: map-get($contenedor, mostrar);
+    flex-direction: map-get($contenedor, direccion);
+    text-align: map-get($contenedor, centro);
+    justify-content: map-get($contenedor, justificar_centro);
+    align-items: map-get($contenedor, alinear_centro);
+  }
+
+
