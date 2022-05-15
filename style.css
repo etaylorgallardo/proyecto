@@ -46,6 +46,7 @@ h1 {
 
 h2 {
   width: 100%;
+  font-weight: bold;
 }
 
 .menu {
@@ -60,6 +61,7 @@ h2 {
 
 .logo {
   border-radius: 10px;
+  margin-left: 50px;
 }
 
 .iframe {
@@ -88,6 +90,10 @@ h2 {
 }
 
 .imagen-blog {
+  border-radius: 100%;
+}
+
+.imagendoc {
   border-radius: 100%;
 }
 
